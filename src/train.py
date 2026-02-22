@@ -39,7 +39,7 @@ if __name__ == "__main__":
         verbose_eval=50
     )
     
-    model.save_model('../models/model_vfinal.json')
+    model.save_model('./models/model_vfinal.json')
     print(f"Best iteration: {model.best_iteration}")
-    joblib.dump(preprocessor, '../models/preprocessor.joblib')
+    joblib.dump(preprocessor, './models/preprocessor.joblib')
     print("Preprocessor saved to models/preprocessor.joblib")
